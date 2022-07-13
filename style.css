@@ -4,6 +4,23 @@ body {
     font-family: serif;
 }
 
+h1 {
+    font-size: 60px;
+    color: #555;
+    font-family: serif;
+}
+
+p {
+    color: #777;
+    line-height: 1.7;
+    font-size: 20px;
+    font-family: serif;
+}
+
+section {
+    padding: 50px 80px;
+}
+
 /* ========== Header Sections ========== */
 .header_section {
     background-image: url(img/home.png);
@@ -74,16 +91,6 @@ body {
     padding: 80px;
 }
 
-.header_content_area h1 {
-    font-size: 60px;
-    color: #555;
-}
-
-.header_content_area p {
-    color: #777;
-    line-height: 1.7;
-    font-size: 20px;
-}
 
 .btn {
     margin-top: 35px;
@@ -100,5 +107,62 @@ body {
 }
 
 .btn a:hover {
+    opacity: .9;
+}
+
+/* ========== Baby Sections  ============ */
+.section_title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.section_title h1 {
+    margin-bottom: 0;
+}
+
+.container_flexbile {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.single_baby_img {
+    width: 30%;
+    position: relative;
+}
+
+.single_baby_img img {
+    margin: 15px;
+    padding: 5px;
+    flex-basis: 100%;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+.btn_2 {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 29%;
+    padding: 15px 30px;
+    background: #a26c4c;
+}
+
+.btn_2 a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+.btn_2:hover {
     opacity: .9;
 }
