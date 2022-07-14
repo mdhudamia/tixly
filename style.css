@@ -1,24 +1,24 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: serif;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 h1 {
     font-size: 60px;
     color: #555;
-    font-family: serif;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 p {
     color: #777;
     line-height: 1.7;
     font-size: 20px;
-    font-family: serif;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 section {
-    padding: 50px 80px;
+    padding: 80px 80px;
 }
 
 /* ========== Header Sections ========== */
@@ -165,4 +165,91 @@ section {
 
 .btn_2:hover {
     opacity: .9;
+}
+
+/* ========= About section =========== */
+.about_flexible {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-grow: 1;
+}
+
+.about_text_area {
+    padding-right: 60px;
+}
+
+.about_img_area img {
+    width: auto;
+    float: right;
+}
+
+/* ======= Gallary section ======= */
+.gallary_flexible {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.single_gall_img img {
+    margin: 5px;
+    width: 95%;
+    padding: 5px;
+}
+
+section.gallary_section>.btn {
+    text-align: center;
+}
+
+/* ======= footer section ========= */
+footer.footer_section {
+    padding: 80px;
+    background: #222;
+    color: #fff;
+}
+
+.footer_flexible {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footer_part_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.part_1 p,
+.part_1 a {
+    color: #ddd;
+    font-size: 20px;
+}
+
+.footer_sub_part_2 {
+    width: 30%;
+    padding-left: 5%;
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+}
+
+input.email {
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    background: #b5b4b4;
+    border: none;
+}
+
+input.sub {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    background: #a26c4c;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
 }
